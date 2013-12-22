@@ -1,0 +1,130 @@
+\chapter{\LaTeX2e{}の基本的な使い方}
+
+\section{図の使い方}
+
+図\ref{fig:青い丸}が青い丸である．
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.3\columnwidth]{blue-circle.pdf}
+ \caption{青い丸}
+ \label{fig:青い丸}
+\end{figure}
+
+\section{表の使い方}
+
+買うものを表\ref{table:買うもの}に示す．
+
+\begin{table}[htbp]
+ \caption{買うもの}
+ \label{table:買うもの}
+ \centering
+ \begin{tabular}{lrr}
+  \hline
+  品名   & 単価（円） & 個数 \\
+  \hline
+  りんご & 100        & 5    \\
+  みかん & 50         & 10   \\
+  \hline
+ \end{tabular}
+\end{table}
+
+\section{参考文献の使い方}
+
+\BibTeX{}を使うと，参考文献リストが自動で生成される．
+
+LDPC符号はGallagerにより提案された誤り訂正符号である\cite{gallager}．
+
+標本空間から実数へ写像する関数のことを，確率変数と呼ぶ
+\cite[p.20~Definition~2.1]{mitzenmacher}．
+
+\section{数式の使い方}
+
+インラインでは$\sum_{k = 1}^n k$のように書く．
+
+別行数式は，
+\begin{equation}
+ E = mc^2 \label{eq:Einstein}
+\end{equation}
+のように書く．「\pageref{eq:Einstein}ページの式\eqref{eq:Einstein}」のよ
+うに，式を参照することができる．
+
+複数の数式を並べるには，
+\begin{gather}
+ (a+b)^2 = a^2 + 2ab + b^2 \\
+ (a-b)^2 = a^2 - 2ab + b^2 \\
+ (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+\end{gather}
+のように書く．
+
+位置をそろえて数式を書くには，
+\begin{align}
+ \sinh^{-1} x &= \log(x + \sqrt{x^2 + 1}) \notag \\
+              &= x - x^3 / 6 + 3x^5 / 40 + \dotsb
+\end{align}
+のようにする．
+
+長い数式を複数行にわたって書くには，
+\begin{multline}
+ a + b + c + d + e + f + g + h + i + j + k \\
+   + l + m + n + o + p + q + r + s + t + u + v \\
+   + w + x + y + z + \alpha + \beta + \gamma + \delta
+\end{multline}
+のようにする．最初の行は左により，最後の行は右による．
+
+ベクトルなどをイタリック体の太字で表したいときには，
+\begin{equation}
+ \bm{a}
+\end{equation}
+のようにする．
+
+数式の中で普通の文字を使いたい場合は，
+\begin{equation}
+ \mathbb{I} \left[
+             \text{$\bm{c}$が例のベクトルである}
+            \right]
+\end{equation}
+のようにする．
+
+行列は，
+\begin{equation}
+ A =
+ \begin{pmatrix}
+  a & b \\
+  c & d
+ \end{pmatrix}
+\end{equation}
+のように書ける．
+
+数理計画問題は，
+\begin{equation}
+ \begin{aligned}
+   & \text{minimize}   & &(x_1 + x_2 + \dots + x_n) \\
+   & \text{subject to} & & x_i + x_j \ge 1, \; (i, j) \in E \\
+   &                   & & x_i \in \{0, 1\}, \; i \in \{1, 2, \dots, n\}
+ \end{aligned}
+ \label{eq:IP}
+\end{equation}
+のように書くと，式番号が中央にくるのできれいかもしれない．
+
+\section{定義・補題・定理・証明の使い方}
+
+\begin{definition}
+ 定義を書く．
+\end{definition}
+
+\begin{lemma}
+ 補題を書く．
+\end{lemma}
+
+\begin{theorem}
+ 定理を書く．
+\end{theorem}
+
+\begin{theorem}[The title]
+ 定理を書く．
+\end{theorem}
+
+\begin{proof}
+ 証明を書く．
+\end{proof}
