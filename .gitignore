@@ -1,0 +1,17 @@
+# LaTeX中間ファイル
+*.aux
+*.dvi
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.xbb
+*.lof
+*.lot
+*.thm
+*.bbl
+*.blg
+
+# PDF
+/thesis.pdf

@@ -1,0 +1,23 @@
+% 画像ファイルをfigureディレクリからも探す
+\graphicspath{{figure/}}
+
+% 定理環境
+\theoremstyle{definition}
+\newtheorem{definition}{定義}[chapter]
+\newtheorem{lemma}{補題}[chapter]
+\newtheorem{theorem}{定理}[chapter]
+\renewcommand{\proofname}{\textgt{証明}}
+
+% 業績リスト
+\newenvironment{業績}
+ {\renewcommand{\labelenumi}{[\arabic{enumi}]} \begin{enumerate}}
+ {\end{enumerate}}
+
+% \kintou command is Copyright (c) 2013 Haruhiko Okumura
+% Licensed under the BSD 2-Clause License
+\newcommand{\kintou}[2]{%
+ \leavevmode
+ \hbox to #1{%
+  \kanjiskip=0pt plus 1fill minus 1fill
+  \xkanjiskip=\kanjiskip
+  #2}}
