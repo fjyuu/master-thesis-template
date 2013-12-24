@@ -1,5 +1,9 @@
 # 修士論文テンプレート #
 
+シンプルな日本語修士論文テンプレート
+
+[見本(PDF)](https://dl.dropboxusercontent.com/u/608308/master-thesis-template/thesis.pdf)
+
 ## PDFファイル作成手順 ##
 
 BibTeXを使っているので，
