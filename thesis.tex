@@ -4,8 +4,11 @@
 
 \documentclass[12pt]{jsbook}
 
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
 \usepackage{amsmath,amssymb}
-\usepackage{amsthm}
+\usepackage[amsmath,thmmarks]{ntheorem}
+\usepackage{textcomp}
 \usepackage{newtxtext}
 \usepackage[scaled]{helvet}
 \usepackage{bm}
@@ -17,6 +20,9 @@
  % 表紙，目次，図目次，表目次
  \frontmatter
  \input{parts/frontmatter}
+
+ % 紙に印刷して校正するために行間を開ける
+ % \setlength{\baselineskip}{1cm}
 
  % 本文
  \mainmatter

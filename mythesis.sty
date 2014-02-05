@@ -4,12 +4,21 @@
 % 日本語強調
 \newcommand{\jemph}[1]{\textbf{#1}}
 
-% 定理環境
-\theoremstyle{definition}
+% 定義，補題，定理
+\theorembodyfont{\upshape}
 \newtheorem{definition}{定義}[chapter]
 \newtheorem{lemma}{補題}[chapter]
 \newtheorem{theorem}{定理}[chapter]
-\renewcommand{\proofname}{証明}
+
+% 証明
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\upshape}
+\theoremseparator{：}
+\theoremsymbol{$\square$}
+\newtheorem{prf}{証明}
+\newenvironment{proof}
+ {\begin{prf}}
+ {\mbox{} \end{prf}}
 
 % 業績リスト
 \newenvironment{業績}
