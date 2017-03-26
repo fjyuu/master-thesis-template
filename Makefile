@@ -1,4 +1,3 @@
-
 filename:=thesis
 
 .PHONY: all clean
@@ -12,4 +11,3 @@ all:
 
 clean:
 	@rm -f $(filename).pdf *.aux *.dvi *.log *.nav *.out *.snm *.toc *.xbb *.lof *.lot *.thm *.bbl *.blg
-
