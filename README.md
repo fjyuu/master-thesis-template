@@ -2,7 +2,7 @@
 
 シンプルな日本語修士論文テンプレート
 
-[見本(PDF)](https://dl.dropboxusercontent.com/u/608308/master-thesis-template/thesis.pdf)
+[見本(PDF)](https://drive.google.com/open?id=0B2ubwGivupfFLTlQc1ozRS0tZms)
 
 ## PDFファイル作成手順 ##
 
