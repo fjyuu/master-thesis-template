@@ -2,7 +2,7 @@
 
 シンプルな日本語修士論文テンプレート
 
-[見本(PDF)](https://drive.google.com/open?id=0B2ubwGivupfFLTlQc1ozRS0tZms)
+[見本(PDF)](https://drive.google.com/file/d/0B2ubwGivupfFLTlQc1ozRS0tZms/view?usp=sharing&resourcekey=0-3bw74rIjC7JRGPsifAi7hw)
 
 ## PDFファイル作成手順 ##
 
